@@ -1,0 +1,60 @@
+  /*exercicio 1*/
+  h1 {
+    font-size: 65px;
+}
+
+/*exercicio 2*/
+h1 {
+    color: orange;
+}
+
+/*exercicio 3*/
+ul {
+    background-color: red;
+}
+
+/*exercicio 4*/
+.change {
+    background-color: aqua;
+}
+
+/*exercicio 5*/
+h1 {
+    font-family: sans-serif;
+}
+
+/*exercicio 6*/
+p {
+    font-weight: 600px;
+}
+
+/*exercicio 7*/
+body {
+    font-size: 16px;
+}
+
+/*exercicio 8*/
+p {
+    font-size: 3 em;
+}
+
+/*exercicio 9*/
+h1 {
+    font-style: oblique;
+    line-height: 5px;
+    text-align: center;
+    text-decoration: double;
+}
+
+/*exercicio 10*/
+#amarelo {
+    background-color: yellow;
+}
+
+#vermelho {
+    background-color: red;
+}
+
+#marrom {
+    background-color: brown;
+}
