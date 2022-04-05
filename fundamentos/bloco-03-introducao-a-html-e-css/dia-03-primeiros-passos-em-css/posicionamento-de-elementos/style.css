@@ -1,0 +1,47 @@
+.super-mario {
+    width: 200px;
+    /* exercicio 1*/
+    position: absolute;
+    z-index: 2;
+}
+  
+  .goomba {
+    width: 100px;
+        /* exercicio 1*/
+
+    position: absolute;
+    z-index: 1;
+  }
+  
+  .baloon {
+          /* exercicio 2*/
+
+      position: absolute;
+      z-index: 3;
+          /* exercicio 3*/
+
+      margin-top: 10px;
+      margin-left: 300px;
+     
+  }
+  
+  .speach {
+    font-size: 25px;
+        /* exercicio 2*/
+
+    position: absolute;
+    z-index: 4;
+        /* exercicio 3*/
+
+    margin-top: 70px;
+    margin-left: 300px;
+  }
+  
+  .bowser {
+    width: 200px;
+        /* exercicio 3*/
+
+    position: absolute;
+    margin-left: 600px;
+    margin-top: 150px;
+  }
