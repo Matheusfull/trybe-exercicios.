@@ -1,0 +1,20 @@
+
+/* exercicio 3 */
+h1 ,p{
+  text-align: center;
+}
+/* exercicio 13*/
+
+ol:hover{
+    background-color: aqua;
+}
+/* exercicio 3*/
+
+li:active{
+    font-size: 20px;
+}
+/* exercicio 5 */
+
+ol, ul{
+    list-style: none;
+}

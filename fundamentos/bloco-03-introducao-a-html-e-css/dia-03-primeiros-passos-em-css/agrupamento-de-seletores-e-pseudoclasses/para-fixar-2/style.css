@@ -1,0 +1,59 @@
+/* exercício 1 */
+
+div:hover{
+    border: black solid 2px;
+}
+/* exercício 2 */
+
+div:nth-last-of-type(5){
+    background-color: purple;
+}
+
+div:nth-last-of-type(4){
+    background-color: green;
+}
+div:nth-last-of-type(3){
+    background-color: yellow;
+}
+div:nth-last-of-type(2){
+    background-color: blue;
+}
+div:nth-last-of-type(1){
+    background-color: red;
+}
+
+/* exercício 3 */
+
+h3:nth-last-of-type(5){
+    font-size: 40px;
+    color:red ;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+h3:nth-last-of-type(4){
+    font-size: 33px;
+    color: blue;
+    font-family:Verdana, Geneva, Tahoma, sans-serif ;
+}
+h3:nth-last-of-type(3){
+    font-size: 25px;
+    color: black;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif ;
+}
+h3:nth-last-of-type(2){
+    font-size: 20px;
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+h3:nth-last-of-type(1){
+    font-size: 15px;
+    color: aqua;
+    font-family: cursive;
+}
+
+/* exercício 4 */
+
+
+div:nth-last-of-type(3){
+    padding: 10px;
+}
+
