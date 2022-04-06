@@ -41,6 +41,9 @@ li{
 .link:hover{
     font-weight: bold;
 }
+.stack:hover{
+    color: orange;
+}
 .w3:hover{
     color: green;
 }
