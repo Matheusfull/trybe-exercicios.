@@ -1,0 +1,55 @@
+/* exercício 1*/
+
+ol li {
+    background-color: rgb(248, 248, 201);
+}
+.par{
+    color: green;
+}
+.impar{
+    text-transform: uppercase;
+}
+
+/* exercício 2*/
+.header{
+    color: red;
+} 
+h1{ 
+    font-size: 40px;
+    border: 1px black solid;
+}
+/* exercício 3*/
+
+li{
+    font-size: 20px;
+}
+.par, .impar{
+    font-weight: bolder;
+}
+
+/* exercício 4*/
+
+.skill{
+    color: blue;
+}
+.java{
+    background-color: pink;
+}
+
+/* exercício 5 (bônus)*/
+
+.link:hover{
+    font-weight: bold;
+}
+.w3:hover{
+    color: green;
+}
+.mdn:hover{
+    color: black;
+}
+.dev:hover{
+    color: yellow;
+}
+.trybe:hover{
+    color: green;
+}
