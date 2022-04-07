@@ -1,60 +1,38 @@
   /*exercicio 1*/
   h1 {
-    font-size: 65px;
-}
-
-/*exercicio 2*/
-h1 {
-    color: orange;
-}
-
-/*exercicio 3*/
-ul {
-    background-color: red;
-}
-
-/*exercicio 4*/
-.change {
-    background-color: aqua;
-}
-
-/*exercicio 5*/
-h1 {
     font-family: sans-serif;
 }
 
-/*exercicio 6*/
-p {
+/*exercicio 2*/
+.changep {
     font-weight: 600px;
 }
 
-/*exercicio 7*/
-body {
+/*exercicio 3*/
+body{
     font-size: 16px;
 }
 
-/*exercicio 8*/
-p {
-    font-size: 3 em;
+/*exercicio 4*/
+.changep{
+    font-size: 3em;
 }
 
-/*exercicio 9*/
-h1 {
-    font-style: oblique;
-    line-height: 5px;
+/*exercicio 5*/
+.changep{
+    font-style: italic;
     text-align: center;
-    text-decoration: double;
+    text-decoration: underline;
 }
 
-/*exercicio 10*/
-#amarelo {
+/*exercicio 6*/
+#amarelo{
     background-color: yellow;
 }
-
-#vermelho {
+#vermelho{
     background-color: red;
 }
-
-#marrom {
+#marrom{
     background-color: brown;
 }
+
