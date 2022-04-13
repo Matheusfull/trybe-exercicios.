@@ -44,16 +44,18 @@ let numbers = [5, 9, 3, 19, 70, 8, 100, 2, 35, 27];
 //console.log(max)
 
 // exercício 6 
-let impares = []
-for (let number = 0; number < numbers.length; number += 1) {
-    let numeros = numbers[number]
-    if (numeros % 2 !== 0) {
-        let qtd = numeros.filter(impares)
-        console.log(qtd)
-    } else {
-        console.log
+let impares = 0
+for (index = 0; index < numbers.length; index += 1) {
+    if (numbers[index] % 2 !== 0) {
+        impares += 1
     }
 }
+if (impares === 0) {
+    console.log("nenhum valor ímpar encontrado")
+} else {
+    console.log(impares)
+}
+
 // exercício 7
 
 //var max = Math.min(...numbers)
