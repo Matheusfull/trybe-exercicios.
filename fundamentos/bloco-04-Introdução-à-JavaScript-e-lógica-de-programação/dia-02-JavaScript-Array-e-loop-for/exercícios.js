@@ -40,21 +40,25 @@ let numbers = [5, 9, 3, 19, 70, 8, 100, 2, 35, 27];
 
 // exercício 5
 
-//var max = Math.max(...numbers)
-//console.log(max)
+for (let index = 0; index < numbers.length; index += 1) {
+    let todos = numbers[index]
+    let maior = Math.max.apply(null,numbers)
+    console.log(maior)
+    break
+}
 
 // exercício 6 
-let impares = 0
-for (index = 0; index < numbers.length; index += 1) {
-    if (numbers[index] % 2 !== 0) {
-        impares += 1
-    }
-}
-if (impares === 0) {
-    console.log("nenhum valor ímpar encontrado")
-} else {
-    console.log(impares)
-}
+//let impares = 0
+//for (index = 0; index < numbers.length; index += 1) {
+  //  if (numbers[index] % 2 !== 0) {
+    //    impares += 1
+   // }
+//}
+//if (impares === 0) {
+  //  console.log("nenhum valor ímpar encontrado")
+//} else {
+  //  console.log(impares)
+//}
 
 // exercício 7
 
