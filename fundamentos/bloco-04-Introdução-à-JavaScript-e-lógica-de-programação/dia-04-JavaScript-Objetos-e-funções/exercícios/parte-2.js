@@ -75,18 +75,23 @@ maiorNome(array) */
 
 // exercício 5 
 
-/* let array = [2, 3, 2, 5, 8, 2, 3]
-let repeticao = 0
-
+let array = [4, 5, 8, 5, 8, 2, 8]
+let currente = null
+let cnt = 0
 function repetido(array) {
     for (index = 0; index < array.length; index += 1) {
-        if (array[index] === array[index]) {
-            repeticao += 1
+        if (array[index] != currente) {
+            if (cnt > 0) {
+                console.log('porra')
+            }
+            currente = array[index]
+            cnt = 1
+        } else {
+            cnt += 1
         }
+  console.log(cnt)
     }
-    console.log(repeticao)
-}
-repetido(array) */
+    repetido(array)
 
 // exercício 6 
 

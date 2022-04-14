@@ -1,5 +1,5 @@
 // exercício 1 
-
+/* 
 let info = {
     personagem: 'Margarida',
     origem: 'Pato Donald',
@@ -24,7 +24,7 @@ for (let key in info) {
 for (let key in info) {
     console.log(info[key])
 }
-
+ */
 // exercício 5 
 let info1 = {
     personagem: 'Margarida',
@@ -39,20 +39,22 @@ let info2 = {
     nota: 'O último MacPatinhas',
     recorrente: 'Sim'
 };
-let nomes1 = ""
+let propDeInfo1 = []
+let propDeInfo2 = []
 
 for (let key1 in info1) {
-    nomes1 = info1[key1]
+    propDeInfo1.push(info1[key1])
 }
-let nomes2 = ""
 for (let key2 in info2) {
-    nomes2 = info2[key2]
+    propDeInfo2.push(info1[key2])
 }
-console.log(nomes2)
+
+
+
 
 // exercício 6
 
-let leitor = {
+/* let leitor = {
     nome: 'Julia',
     sobrenome: 'Pessoa',
     idade: 21,
@@ -83,4 +85,4 @@ let leitor1 = {
             editora: 'Rocco',
         }
     ],
-};
+}; */
