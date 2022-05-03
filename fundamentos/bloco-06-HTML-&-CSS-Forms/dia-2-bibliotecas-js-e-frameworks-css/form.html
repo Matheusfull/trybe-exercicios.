@@ -8,122 +8,79 @@
     <title>Formuláiro</title>
     <link rel="stylesheet" href="bootstrap-5.1.3-dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="atyle.css">
+    <link rel="stylesheet" href="dist/css/DatePickerX.min.css">
 </head>
 
-    <body>
+<body>
     <div class="container">
         <header class="container text-center">
             <h1 class="display-3">Formulário da felicidade</h1>
             <p class="lead"><em>
-                Quer ganhar a viagem ?! Então preencha o formulário
-            </em></p>
+                    Quer ganhar a viagem ?! Então preencha o formulário
+                </em></p>
         </header><br>
         <form action="" method="get" class="container text-center">
 
-        <div class="container text-center ">
-            <label for="name" class="form-label">Nome :</label>
-            <input 
-            type="text" 
-            name="name" 
-            id="name" 
-            class="form-control" 
-            minlength="10"
-            maxlength="40"
-            
-            >
-        </div>
+            <div class="container text-center ">
+                <label for="name" class="form-label">Nome :</label>
+                <input type="text" name="name" id="name" class="form-control" minlength="10" maxlength="40">
+            </div>
             <br>
-        <div class="container text-center">
-            <label for="email" class="form-label">Email :</label>
-            <input 
-            type="email" 
-            name="email" 
-            id="email"
-            class="form-control" 
-            minlength="10"
-            maxlength="50"
-            >
-        </div>
-        <br>
-        <div class="container">
-            <div class="container">
-             <input 
-             type="radio" 
-             name="lugar" 
-             class="form-check-input"
-             id="cidade">
-             <label for="cidade" class="form-label">Cidade </label>
+            <div class="container text-center">
+                <label for="email" class="form-label">Email :</label>
+                <input type="email" name="email" id="email" class="form-control" minlength="10" maxlength="50">
             </div>
+            <br>
             <div class="container">
-             <input 
-             type="radio" 
-             name="lugar" 
-             class="form-check-input"
-             id="campo">
-             <label for="campo" class="form-label">Campo</label>
+                <div class="container">
+                    <input type="radio" name="lugar" class="form-check-input" id="cidade">
+                    <label for="cidade" class="form-label">Cidade </label>
+                </div>
+                <div class="container">
+                    <input type="radio" name="lugar" class="form-check-input" id="campo">
+                    <label for="campo" class="form-label">Campo</label>
+                </div>
+                <div class="container">
+                    <input type="radio" name="lugar" class="form-check-input" id="praia">
+                    <label for="praia" class="form-label">Praia</label>
+                </div>
+                <div class="container">
+                    <input type="radio" name="lugar" class="form-check-input" id="montanha">
+                    <label for="montanha" class="form-label">Montanha </label>
+                </div>
             </div>
-            <div class="container">
-                <input 
-                type="radio" 
-                name="lugar" 
-                class="form-check-input"
-                id="praia">
-                <label for="praia" class="form-label">Praia</label>
-            </div>
-            <div class="container">
-                <input 
-                type="radio" 
-                name="lugar" 
-                class="form-check-input"
-                id="montanha">
-                <label for="montanha" class="form-label">Montanha </label>
-            </div>
-        </div>
-        <div class="container form-check">
-            <p>Por que você deveria ser a pessoa desenvolvedora a ganhar o concurso TrybeTrip?</p>
-            <textarea 
-            name="text" 
-            id="text" 
-            cols="30" 
-            rows="10" 
-            maxlength="500"
-            class="form-control"
-            placeholder="Máximo de 500 caracteres">
+            <div class="container form-check">
+                <p>Por que você deveria ser a pessoa desenvolvedora a ganhar o concurso TrybeTrip?</p>
+                <textarea name="text" id="text" cols="30" rows="10" maxlength="500" class="form-control"
+                    placeholder="Máximo de 500 caracteres">
             </textarea><br><br>
-        </div>
-            <label for="date"></label>Qual a melhor data para realizar sua viagem? :
-            <input 
-            type="text" 
-            id="date" 
-            name="date" 
-            placeholder="dd//mm//aaaa"><br><br>
-            
-        <div class="container">
-            <div class="form-check">
-            <label for="ok1">Gostaria de receber outras incríveis oportunidades oferecidas pela Trybe?</label>
-            <input 
-            type="checkbox" 
-            id="ok1"><br><br>
             </div>
-            <div class="form-check">
-            <label for="ok2">Concordo que imagens das minhas férias poderão ser usadas na divulgação de concursos
-                futuros.</label>
-            <input 
-            type="checkbox" 
-            id="ok2">
+            <label for="myInputId"></label>Qual a melhor data para realizar sua viagem? :
+            <input type="text" id="myInputId" name="date" placeholder="dd//mm//aaaa"><br><br>
+
+            <div class="container">
+                <div class="form-check">
+                    <label for="ok1">Gostaria de receber outras incríveis oportunidades oferecidas pela Trybe?</label>
+                    <input type="checkbox" id="ok1"><br><br>
+                </div>
+                <div class="form-check">
+                    <label for="ok2">Concordo que imagens das minhas férias poderão ser usadas na divulgação de
+                        concursos
+                        futuros.</label>
+                    <input type="checkbox" id="ok2">
+                </div>
             </div>
-        </div>
             <br>
-         <div class="container">
-            <button class="btn btn-primary btn-lg" id="btn" type="submit">Enviar</button>
-            <input 
-            type="reset" 
-            value="apagar"
-            class="btn btn-secondary btn-lg">
-         </div>
+            <div class="container">
+                <button class="btn btn-primary btn-lg" id="btn" type="submit">Enviar</button>
+                <input type="reset" value="apagar" class="btn btn-secondary btn-lg">
+            </div>
 
         </form>
     </div>
-    </body>
+    <script src="script.js"></script>
+    <script src="dist/js/DatePickerX.min.js"></script>
+    
+</body>
 
 </html>
