@@ -30,6 +30,7 @@ function enviar(event) {
         console.log('as fotos foram autorizadas!')
     } else {
         alert('Dados inválidos!')
+        event.preventDefault();
     }
 }
 
