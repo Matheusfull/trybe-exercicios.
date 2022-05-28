@@ -1,0 +1,66 @@
+html {
+    box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+/* layout pequeno  */
+@media screen and (max-width:500px) {
+    body{
+        box-sizing: border-box;
+        width: 100%;
+        background-color: rgb(248, 240, 203);
+    }
+    #title-header {
+        font-size: 1.5rem;
+        text-align: center;
+    }
+
+    .ul-header {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .ul-header li {
+        list-style: none;
+    }
+
+    .aside-one h2 {
+        text-align: center;
+    }
+
+    .aside-one ul {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        width: 80%;
+    }
+
+    .aside-one li {
+        list-style: none;
+    }
+    .aside-two h2{
+        font-size: 1.6rem;
+        text-align: center;
+    }
+    .aside-two ul{
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        width: 900px;
+    }
+    .main-content h1{
+        font-size: 1.5rem;
+    }
+    footer{
+        display: flex;
+        flex-direction: column;
+        width: 80%;
+    }
+}
