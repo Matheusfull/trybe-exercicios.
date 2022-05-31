@@ -62,13 +62,10 @@ const books = [
 ];
 
 function fantasyOrScienceFiction(film) {
-    let array = []
     let listOgFilm = film.filter((whatsFilm) => {
-        if (whatsFilm.genre === 'Fantasia' || whatsFilm.genre === 'Ficção Científica') {
-              array.push(whatsFilm)
-        }
+        return (whatsFilm.genre === 'Fantasia' || whatsFilm.genre === 'Ficção Científica')
     })
-    return array
+    return listOgFilm
 }
 
 console.log(fantasyOrScienceFiction(books))

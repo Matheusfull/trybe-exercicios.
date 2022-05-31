@@ -1,21 +1,21 @@
 const names = [
-    'Aanemarie', 'Adervandes', 'Akifusa',
-    'Abegildo', 'Adicellia', 'Aladonata',
-    'Abeladerco', 'Adieidy', 'Alarucha',
+    'Aanemarie', 'Adervandes', 'Akifusa', // 7
+    'Abegildo', 'Adicellia', 'Aladonata', // 7
+    'Abeladerco', 'Adieidy', 'Alarucha',  // 6
 ];
 
 function containsA() {
-    // let array = []
-    const list = names.reduce((acc, curr) => {
-        if (curr.indexOf('a') || curr.indexOf('A')) {
-            // array.push(curr.indexOf('a'))
-            //array.push(curr.indexOf('A')) 
-            acc += Math.abs(curr.indexOf('a'))
-            acc += Math.abs(curr.indexOf('A'))
-            return acc
+    const name = names.reduce((acc, book) => {
+        return `${acc} ${book}`
+    }, '')
+    const array = [];
+    const stringEmArray = name.split('')
+    for (let index of stringEmArray) {
+        if (index === 'a' || index === 'A') {
+            array.push(index)
         }
-    }, 0)
-    return list
+    }
+    return array.length;
 }
 
 console.log(containsA())
