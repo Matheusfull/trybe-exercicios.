@@ -40,40 +40,49 @@ let numbers = [5, 9, 3, 19, 70, 8, 100, 2, 35, 27];
 
 // exercício 5
 
+/* let numberMax = [0]
 for (let index = 0; index < numbers.length; index += 1) {
-    let todos = numbers[index]
-    let maior = Math.max.apply(null,numbers)
-    console.log(maior)
-    break
+  if (numberMax < numbers[index]) {
+    numberMax = numbers[index]
+  }
 }
+console.log(numberMax); */
+
+// obs: sem usar for : let maior = Math.max.apply(null,numbers)
 
 // exercício 6 
 //let impares = 0
 //for (index = 0; index < numbers.length; index += 1) {
-  //  if (numbers[index] % 2 !== 0) {
-    //    impares += 1
-   // }
+//  if (numbers[index] % 2 !== 0) {
+//    impares += 1
+// }
 //}
 //if (impares === 0) {
-  //  console.log("nenhum valor ímpar encontrado")
+//  console.log("nenhum valor ímpar encontrado")
 //} else {
-  //  console.log(impares)
+//  console.log(impares)
 //}
 
 // exercício 7
-
-//var max = Math.min(...numbers)
+/* let numberMin = numbers[0]
+for (let index = 0; index < numbers.length; index += 1) {
+  if (numberMin > numbers[index]) {
+    numberMin = numbers[index]
+  }
+}
+console.log(numberMin); */
+//obs: sem usar o for: var max = Math.min(...numbers)
 //console.log(max)
 
 // exercício 8
-
-//for(i=1;i<=25;i+=1){
-//  console.log(i)
-//}
+/* let array = []
+for (i = 1; i <= 25; i += 1) {
+  array.push(i)
+}
+console.log(array)
 
 // exercício 9 
 
-//for (i = 1; i <= 25; i += 1) {
-  // let numero = i/2
- //  console.log(numero)
-//}
+for (i = 0; i <= array.length; i += 1) {
+  console.log(array[i]/2);
+} */

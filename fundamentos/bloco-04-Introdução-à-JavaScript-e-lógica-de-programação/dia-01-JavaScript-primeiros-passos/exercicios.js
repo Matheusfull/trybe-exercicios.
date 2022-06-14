@@ -83,8 +83,10 @@ if (nome == "peao") {
     console.log("Ela pode mover quantas casas quiser para esquerda ou direita (na horizontal), ou quantas casas quiser para cima ou para baixo (na vertical), desde que não seja bloqueada por outras peças. ")
 } else if (nome == "dama") {
     console.log("A dama também pode mover quantas casas quiser na diagonal (como o bispo)")
-} else {
+} else if(nome === 'rei'){
     console.log("pode se mover (ou capturar) uma casa em qualquer direção.")
+}else{
+    console.log('Peça não identificada.')
 }
 
 // exercícios 7
@@ -110,7 +112,7 @@ if (nota >= 90 && nota <= 100) {
 const number1 = 2
 const number2 = 3
 const number3 = 5
-if (number1 % 2 === 0 | number2 % 2 === 0 || number3 % 2 === 0) {
+if (number1 % 2 === 0 || number2 % 2 === 0 || number3 % 2 === 0) {
     console.log("true")
 } else {
     console.log("false")
@@ -133,7 +135,7 @@ const custo = 10
 const valorDeCustoTotal = (custo + custo * 0.2)
 const valorDeVenda = 20
 const lucro = valorDeVenda - valorDeCustoTotal
-if (custo === 0 || valorDeVenda === 0) {
+if (custo === 0 && valorDeVenda === 0) {
     console.log("Erros com os valores de entrada")
 } else {
     console.log(`Seu lucro foi de ${lucro * 1000}`)
@@ -161,7 +163,7 @@ if (salarioBruto <= 1556.94) {
 
 }
 
-if (salarioComINSSDescontado >= 1903 && salarioComINSSDescontado <= 2826.65) {
+if (salarioComINSSDescontado > 1903.99 && salarioComINSSDescontado <= 2826.65) {
     descontoIR = (salarioComINSSDescontado * 0.075) - 142.80
     console.log(descontoIR)
 } else if (salarioComINSSDescontado >= 2826.66 && salarioComINSSDescontado <= 3751.05) {

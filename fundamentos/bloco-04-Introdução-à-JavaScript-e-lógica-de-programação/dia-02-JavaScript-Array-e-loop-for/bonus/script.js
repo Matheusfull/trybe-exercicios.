@@ -31,7 +31,7 @@ console.log(numbers) */
 
 // EXERCÍCIO 3
 
-for (let i = 0; i < numbers.length - 1; i += 1) {
+/* for (let i = 0; i < numbers.length - 1; i += 1) {
     if (i !== (numbers.length - 2)) {
         let fator1 = numbers[i]
         let fator2 = numbers[i + 1]
@@ -44,4 +44,16 @@ for (let i = 0; i < numbers.length - 1; i += 1) {
 
 }
 
-console.log(numbers)
+console.log(numbers) */
+
+// Outra solução: 
+
+/* let novoArray = []
+for (let index = 0; index < numbers.length; index += 1) {
+    if (index + 1 < numbers.length) {
+        novoArray.push(numbers[index] * numbers[index + 1])
+    } else {
+        novoArray.push(numbers[index] * 2)
+    }
+}
+console.log(novoArray) */

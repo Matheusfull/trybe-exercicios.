@@ -1,5 +1,5 @@
 let n = 50
-let numeros = []
+let numeros
 for (let x = 2; x <= n; x += 1) {
     let primo = true
     for (let y = 2; y < x; y += 1) {
