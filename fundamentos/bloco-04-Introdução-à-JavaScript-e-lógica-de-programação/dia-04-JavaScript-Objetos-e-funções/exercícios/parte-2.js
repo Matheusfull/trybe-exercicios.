@@ -15,21 +15,27 @@ palindromo("desenvolvimento") */
 
 // exercício 2
 
-/* let array = []
-let maiorzinho = ''
+/* let maiorzinho = ''
 let posicao = ''
-function maior(array) {
-    for (index = 0; index < array.length; index += 1) {
-        maiorzinho = Math.max.apply(null, array)
-        //console.log(maiorzinho)
-        posicao = array.indexOf(maiorzinho)
-        console.log(posicao)
-        break
+function maior(array) { */
+/*  for (index = 0; index < array.length; index += 1) {
+     maiorzinho = Math.max.apply(null, array)
+     //console.log(maiorzinho)
+     posicao = array.indexOf(maiorzinho)
+     console.log(posicao)
+     break
+ } */
+/* // Outra solução
+let number = 0
+for (let index in array) {
+    if (array[0] < array[index]) {
+       number = index
     }
 }
+console.log(number)
+} */
 
-
-maior([2, 3, 6, 7, 10, 1]) */
+// maior([2, 3, 6, 7, 10, 1])
 
 
 // exercício 3
@@ -73,25 +79,46 @@ function maiorNome(array) {
 }
 maiorNome(array) */
 
+// Solução com parecida com a do exercício 2. Porém vamos passar o número de letras de cada nome.
+/* 
+function letterName(array) {
+    let name = array[0]
+    for (let value of array) {
+        if (name.length < value.length) {
+            name = value
+        }
+
+    }
+    console.log(name);
+}
+letterName(['José', 'Lucas', 'Nádia', 'Fernanda', 'Cairo', 'Joana']) */
+
 // exercício 5 
 
-let array = [4, 5, 8, 5, 8, 2, 8]
-let currente = null
-let cnt = 0
-function repetido(array) {
-    for (index = 0; index < array.length; index += 1) {
-        if (array[index] != currente) {
-            if (cnt > 0) {
-                console.log('porra')
+/* function contador(array) {
+    let arrayContador = []
+    for (let primeiro of array) {
+        let contador = 0
+        for (segundo of array) {
+            // console.log(segundo)
+            if (primeiro === segundo) {
+                contador += 1
             }
-            currente = array[index]
-            cnt = 1
-        } else {
-            cnt += 1
         }
-  console.log(cnt)
+        arrayContador.push(contador)
     }
-    repetido(array)
+    // return arrayContador
+
+    let maior = 0
+    for (let index in array) {
+        if (array[0] < array[index]) {
+            maior = index
+        }
+    }
+    return maior
+}
+
+console.log(contador([2, 3, 2, 5, 8, 2, 3])) */
 
 // exercício 6 
 
@@ -106,9 +133,8 @@ function soma(n) {
 soma(5) */
 
 // exercício 7 
-/* 
 
-function comparacao(string1, string2) {
+/* function comparacao(string1, string2) {
 
     let string1Cortada = string1.slice(-string2.length)
     if (string1Cortada === string2) {
@@ -116,6 +142,21 @@ function comparacao(string1, string2) {
     } else {
         console.log("false")
     }
+} */
+
+// Outra solução 
+
+/* function comparacao(let1, let2) {
+    let palavra = let1.split('')
+    let fimDaPalavra = let2.split('')
+    let situation = true
+    for (let index = 0; index < let2.length; index += 1) {
+        if (palavra[palavra.length - fimDaPalavra.length + index] != fimDaPalavra[index]) {
+            situation = false
+            // uma vez que muda a situation, indica que o final não é mais igual.
+        }
+    }
+    return situation;
 }
 
-comparacao('trybe', 'be') */
+console.log(comparacao('joaofernando', 'fernan')) */
