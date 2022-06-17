@@ -1,7 +1,7 @@
 // exercício 1
 function exercicio1() {
     document.getElementsByTagName("p")[0].innerText = 'Imagino-me sabendo muita programação e vivendo coisas incríveis'
-    document.getElementsByTagName("p")[1].innerText = 'Que também empreender na área da educação usando tecnologia'
+    document.getElementsByTagName("p")[1].innerText = 'E também quero empreender na área da educação usando tecnologia'
 }
 exercicio1()
 
@@ -37,11 +37,16 @@ exercicio5()
 // exercício 6
 
 function exercicio6() {
-    let tag1 = document.getElementsByTagName("p")[0].innerText
-    console.log(tag1)
-    let tag2 = document.getElementsByTagName("p")[1].innerText
-    console.log(tag2)
-    let tag3 = document.getElementsByTagName("p")[2].innerText
-    console.log(tag3)
+      let tag1 = document.getElementsByTagName("p")[0].innerText
+     console.log(tag1)
+     let tag2 = document.getElementsByTagName("p")[1].innerText
+     console.log(tag2)
+     let tag3 = document.getElementsByTagName("p")[2].innerText
+     console.log(tag3) 
+    // Outar solução:
+    /* let tag = document.getElementsByTagName('p')
+    for (let index = 0; index < tag.length; index += 1) {
+        console.log(tag[index].innerHTML)
+    } */
 }
 exercicio6()

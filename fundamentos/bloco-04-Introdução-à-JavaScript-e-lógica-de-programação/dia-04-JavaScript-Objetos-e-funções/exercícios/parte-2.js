@@ -109,13 +109,14 @@ letterName(['José', 'Lucas', 'Nádia', 'Fernanda', 'Cairo', 'Joana']) */
     }
     // return arrayContador
 
-    let maior = 0
-    for (let index in array) {
-        if (array[0] < array[index]) {
+     let maior = 0
+    for (let index in arrayContador) {
+        if (arrayContador[0] < arrayContador[index]) {
             maior = index
         }
     }
-    return maior
+    // return maior 
+    return array[maior]
 }
 
 console.log(contador([2, 3, 2, 5, 8, 2, 3])) */

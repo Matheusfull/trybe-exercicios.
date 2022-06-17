@@ -34,6 +34,7 @@ console.log(planetDistanceFromSun(jupiter)); // C
  */
 // A,B,C
 
+
 // -----------------------------------------exercise 2-------------------------------------
 
 /* const planetDistanceFromSun = ({ name, distanceFromSun: { value, measurementUnit } }) =>
@@ -136,9 +137,9 @@ sendMarsTemperature(temperatureInFahrenheit); // imprime "It is currently 47ºF 
 sendMarsTemperature(greet); // imprime "Hi there! Curiosity here. Right now is 53ºC at Mars", por exemplo
  */
 
-// -----------------------------------------exercise 5-------------------------------------
+// -----------------------------------------exercise 6-------------------------------------
 
-const messageDelay = () => Math.floor(Math.random() * 5000);
+/* const messageDelay = () => Math.floor(Math.random() * 5000);
 
 const getMarsTemperature = () => {
   const maxTemperature = 58;
@@ -174,4 +175,7 @@ const sendMarsTemperature = (cb, err) => {
 sendMarsTemperature(temperatureInFahrenheit, handleError);
 
 // imprime "Hi there! Curiosity here. Right now is 53ºC at Mars", por exemplo, ou "Error getting temperature: Robot is busy"
-sendMarsTemperature(greet, handleError);
+sendMarsTemperature(greet, handleError); */
+
+// -----------------------------------------exercise 7-------------------------------------
+

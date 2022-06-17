@@ -131,6 +131,17 @@
         lista.appendChild(itens10)
         section3.appendChild(lista)
 
+        // Outra solução:
+        /*  let lista = document.createElement("ul")
+         section3.appendChild(lista)
+         const arrayNumbers = ['Um', 'Dois', 'Três', 'Quatro', 'Cinco', 'Seis',
+         'Sete', 'Oito', 'Nove', 'Dez']
+         for(let number in arrayNumbers){
+             const li = document.createElement('li')
+             li.innerHTML = arrayNumbers[number]
+             ul.appendChild(li)
+         } */
+
         // 9 
         let tag1 = document.createElement("h3")
         let tag2 = document.createElement("h3")
@@ -142,7 +153,8 @@
         // parte 2
 
         // 1
-        h1.classList = 'title'
+        let title = document.querySelector('.h1')
+        title.classList = 'title'
 
         //2
         tag1.classList = 'description'
@@ -156,7 +168,7 @@
         section3.style.marginRight = "auto"
 
         //5
-        section.style.backgroundColor='green'
+        section.style.backgroundColor = 'green'
 
         //6
         lista.removeChild(itens9)
