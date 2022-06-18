@@ -1,6 +1,6 @@
 // exercício 3
 
-/* const btn = document.getElementById('btn')
+/*  const btn = document.getElementById('btn')
 
 function enviar(event) {
     event.preventDefault();
@@ -13,12 +13,40 @@ function enviar(event) {
     }
 }
 
-btn.addEventListener('click', enviar)
- */
+btn.addEventListener('click', enviar) */
+
+// Outar solução: 
+
+// exercício 3 
+
+function preventDefault(event) {
+    event.preventDefault();
+}
+
+// exercício 4
+
+function clearInputs() {
+    const ipnuts = document.querySelectorAll('input')
+    const textArea = document.querySelector('textarea')
+    for (let index = 0; index < ipnuts.length; index += 1) {
+        ipnuts[index] = ''
+        ipnuts[index].checked = false
+    }
+    textArea.value = ''
+}
+
+window.onload = function () {
+    const btn = document.getElementById("btn")
+    btn.addEventListener('click', preventDefault)
+
+    const clear = document.getElementById('clear')
+    clear.addEventListener('click', clearInputs)
+}
+
 
 // BÔNUS 
 
-const btn = document.getElementById('btn')
+/* const btn = document.getElementById('btn')
 
 function enviar(event) {
     const box = document.getElementById('ok2')
@@ -34,6 +62,6 @@ function enviar(event) {
     }
 }
 
-btn.addEventListener('click', enviar)
+btn.addEventListener('click', enviar) */
 
 

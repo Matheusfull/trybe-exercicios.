@@ -19,6 +19,7 @@
             id="name" 
             minlength="10" 
             maxlength="40"
+            required
             ><br>
             <label for="email">Email :</label>
             <input 
@@ -27,6 +28,7 @@
             id="email" 
             minlength="10" 
             maxlength="50"
+            required
             ><br>
             <input 
             type="radio" 
@@ -44,9 +46,9 @@
             type="radio" 
             name="lugar" 
             class="lugar">Montanhas
+            <br>
 
-            <p>Por que você deveria ser a pessoa desenvolvedora a ganhar o concurso TrybeTrip?</p>
-
+            <label for="text">Por que você deveria ser a pessoa desenvolvedora a ganhar o concurso TrybeTrip?</label>
             <textarea 
             name="text" 
             id="text" 
@@ -64,16 +66,20 @@
             <label for="ok1">Gostaria de receber outras incríveis oportunidades oferecidas pela Trybe?</label>
             <input 
             type="checkbox" 
+            name="news"
             id="ok1"><br><br>
 
             <label for="ok2">Concordo que imagens das minhas férias poderão ser usadas na divulgação de concursos
                 futuros.</label>
             <input 
             type="checkbox" 
-            id="ok2"><br>
+            name="concordancia"
+            id="ok2"
+            required ><br>
     </div>
     <button id="btn">Enviar</button>
-    <input type="reset" value="apagar">
+   <!--  <input type="reset" value="apagar"> -->
+   <button type="button" id="clear">Apagar</button>
     </form>
 
 
