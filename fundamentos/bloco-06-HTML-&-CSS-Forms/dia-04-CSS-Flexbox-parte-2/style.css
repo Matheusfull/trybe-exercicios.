@@ -61,6 +61,8 @@
     flex-direction: column;
     /* EXERCÍCIO 4 */
     flex-grow: 10;
+    /* EXERCÍCIO 3 */
+    flex-basis: 700px;
   }
   
   .movie-container h2 {
@@ -72,8 +74,6 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-    /* EXERCÍCIO 3 */
-    flex-basis: 700px;
   }
   
   .card-container div {
@@ -94,9 +94,9 @@
     display: flex;
     flex-direction: column;
     /* EXERCÍCIO 2 - Alinhando */
-    justify-content: center;
+    align-self: center;
     /* EXERCÍCIO 2 - expandindo */
-    flex-grow: 3;
+    flex-grow: 1;
     margin: 20px;
     /* EXERCÍCIO 1 */
     flex-basis: 350px;
