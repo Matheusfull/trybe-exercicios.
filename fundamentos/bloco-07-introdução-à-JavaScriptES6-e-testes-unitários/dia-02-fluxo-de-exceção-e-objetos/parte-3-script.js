@@ -59,7 +59,7 @@ const allLessons1 = Object.assign({}, { lesson1, lesson2, lesson3 });
 
 
 //                                     EXERCÍCIO 6 
-/* function totalAluns(obj) {
+/*  function totalAluns(obj) {
     let soma = 0;
     let valueOfObj = Object.values(obj)
     // return valueOfObj
@@ -69,23 +69,23 @@ const allLessons1 = Object.assign({}, { lesson1, lesson2, lesson3 });
     }
     return soma
 }
-console.log(totalAluns(allLessons1)) */
+console.log(totalAluns(allLessons1))  */
 
 //                                      EXERCÍCIO 7
 
-/*  const getValueByNumber = (lesson, number) => {
+/* const getValueByNumber = (lesson, number) => {
     const pairKeyValue = Object.entries(lesson);
     return pairKeyValue[number][number];
 }
 
-console.log(getValueByNumber(lesson1,0))  */
+console.log(getValueByNumber(lesson1, 0)) */
 
 //                                      EXERCÍCIO 8  
 
-const verifyPair = (lesson, key, value) => {
+/* const verifyPair = (lesson, key, value) => {
     let situation = false;
     const pairKeyValue = Object.entries(lesson);
-    // return pairKeyValue;
+    //return pairKeyValue;
     for (let index = 0; index < pairKeyValue.length; index += 1) {
         if (pairKeyValue[index][0] === key && pairKeyValue[index][1] === value) {
             situation = true;
@@ -94,4 +94,4 @@ const verifyPair = (lesson, key, value) => {
     return situation;
 }
 
-console.log(verifyPair(lesson2, 'professor', 'Carlos'));
+console.log(verifyPair(lesson2, 'professor', 'Carlos')); */

@@ -22,10 +22,11 @@
     <script>
 
         const verification = (x1, x2) => {
+            // exercício 2
             if (isNaN(x1) || isNaN(x2)) {
                 throw new Error('Valores não preenchidos ou não numéricos!')
             }
-
+            // exercício 1
             if ((!x1 || !x2)) {
                 throw new Error('Valores não preenchidos ou não numéricos!')
             }
@@ -45,6 +46,7 @@
                 /*  document.getElementById('value1').value = '';
                  document.getElementById('value2').value = ''; */
             }
+            // exercício 3
             finally {
                 document.getElementById('value1').value = '';
                 document.getElementById('value2').value = '';

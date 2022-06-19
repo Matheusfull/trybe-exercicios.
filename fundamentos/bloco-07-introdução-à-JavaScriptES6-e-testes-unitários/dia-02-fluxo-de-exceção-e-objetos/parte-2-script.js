@@ -41,13 +41,17 @@ const customerInfo = (order) => {
 
 }
 
-console.log(customerInfo(order))
+// console.log(customerInfo(order))
+
+order.name = 'Matheus Felipe'
+order.payment.total = 'R$ 50,00'
+// console.log(order)
 
 const orderModifier = (order) => {
     // Adicione abaixo as informações necessárias.
     // Exercício 2
-    return `Olá, Luiz Silva. O total do seu pedido de marguerita, pepperoni e ${order.order.drinks.coke.type} é R$ 50,00.`
+    return `Olá, ${order.name}. O total do seu pedido de marguerita, pepperoni e ${order.order.drinks.coke.type} é ${order.payment.total}.`
 
 }
 
-console.log(orderModifier(order)) 
+ console.log(orderModifier(order)) 
