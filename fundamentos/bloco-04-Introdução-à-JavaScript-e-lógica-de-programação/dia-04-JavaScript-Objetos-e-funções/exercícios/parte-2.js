@@ -25,6 +25,8 @@ function maior(array) { */
      console.log(posicao)
      break
  } */
+ 
+ 
 /* // Outra solução
 let number = 0
 for (let index in array) {
