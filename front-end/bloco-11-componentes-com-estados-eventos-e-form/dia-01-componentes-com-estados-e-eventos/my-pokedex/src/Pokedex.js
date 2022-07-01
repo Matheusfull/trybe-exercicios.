@@ -12,6 +12,7 @@ class Pokedex extends React.Component {
     super()
     this.state = {
       number: 0,
+      state1: '',
     }
     this.mudar = this.mudar.bind(this)
   }
@@ -29,16 +30,38 @@ class Pokedex extends React.Component {
     }
   }
 
+  fire = () => {
+    this.setState({
+      state1: 'fire'
+    })
+  }
+
 
   render() {
     const { pokemons } = this.props;
+    const { state1 } = this.state
     return (
       <div className="pokedex">
+        <div>
+          <button type='button' onClick={this.fire}>Fire</button>
+          <button type='button'>Psychic</button>
+        </div>
         {pokemons.map((pokemon) => (
           <Pokemon key={pokemon.id} pokemon={pokemon} />
         ))[this.state.number]}
         <button onClick={this.mudar}>Pŕoximo</button>
+        <div>
+          {
+            pokemons.filter((element) => (
+              element.type === { state1 }
+                .map((cada) => (
+                  <Pokemon pokemon={cada} key={cada.id} />
+                ))
+            ))
+          }
+        </div>
       </div>
+
     );
   }
 }
