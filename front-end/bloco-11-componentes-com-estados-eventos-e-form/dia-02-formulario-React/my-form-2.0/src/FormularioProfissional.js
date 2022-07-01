@@ -31,6 +31,7 @@ class FormularioProfissional extends React.Component {
                     <textarea
                         name="descricao"
                         maxLength="500"
+                        required
                         onChange={passandoFuncao1}
                     />
                 </label>

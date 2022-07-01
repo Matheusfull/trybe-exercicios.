@@ -1,4 +1,5 @@
 import React from "react";
+import FormDataDisplay from "./FormDataDisplay";
 import Formulario from "./Formulario";
 import FormularioProfissional from "./FormularioProfissional";
 
@@ -62,16 +63,17 @@ class Form extends React.Component {
                         /* 
                         4 - Precisamos passar o estado também
                         */
-                        state={this.state}
+                        estadoInteiro={this.state}
                     />
                     <FormularioProfissional
                         passandoFuncao1={this.changeHandle}
                         passandoFuncao2={this.onBlurHandle}
+                        estadoInteiro={this.state}
                     />
                     <input type="submit" value="Enviar tudão" />
                 </form >
                 {
-                    submite && (<h1>Os dados foram atualizados</h1>)
+                    submite && (<FormDataDisplay passandoEstado={ this.state } />)
                 }
             </>
         )

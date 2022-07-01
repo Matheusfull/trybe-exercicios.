@@ -1,5 +1,7 @@
 import React from "react";
 
+const states = ["AC", 'AL', 'AM', 'BA', 'CE', 'GO', 'MA', 'PA']
+
 /* const initialState = {
     nome: '',
     email: '',
@@ -16,6 +18,7 @@ import React from "react";
 */
 
 class Formulario extends React.Component {
+
     /* constructor() {
         super()
         this.state = initialState
@@ -24,7 +27,7 @@ class Formulario extends React.Component {
     */
 
     /* validateAddress = (address) => address.replace(/[^\w\s]/gi, '')
-    Não vai subir ninguém, todo vão para o pai
+    Não vai subir ninguém, todo vai para o pai
     */
 
     /* changeHandle = ({ target }) => {
@@ -61,7 +64,7 @@ class Formulario extends React.Component {
         4 - importa o state e usa nos form
         */
 
-        const { state: { nome, endereco, cidade } } = this.props
+        const { estadoInteiro: { nome, email, cpf, endereco, cidade, estado, tipo } } = this.props
 
         const { passandoFuncao1, passandoFuncao2 } = this.props
 
@@ -86,6 +89,7 @@ class Formulario extends React.Component {
                     <label>
                         Email:
                         <input
+                            value={email}
                             type="email"
                             required
                             name="email"
@@ -97,6 +101,7 @@ class Formulario extends React.Component {
                     <label>
                         CPF:
                         <input
+                            value={cpf}
                             type="text"
                             required
                             name="cpf"
@@ -133,18 +138,24 @@ class Formulario extends React.Component {
                     <label>
                         Estado:
                         <select
+                            value={estado}
                             name="estado"
                             required
                             onChange={passandoFuncao1}
                         >
-                            <option>AC</option>
+                            {/* <option>AC</option>
                             <option>AL</option>
                             <option>AM</option>
                             <option>BA</option>
                             <option>CE</option>
                             <option>GO</option>
                             <option>MA</option>
-                            <option>PA</option>
+                            <option>PA</option> */}
+                            {
+                                states.map((state, key) => (
+                                    <option key={key}>{state}</option>
+                                ))
+                            }
                         </select>
                     </label>
 
@@ -154,14 +165,14 @@ class Formulario extends React.Component {
                         <input
                             type="radio"
                             name="tipo"
-                            value="house"
+                            value={tipo}
                             onChange={passandoFuncao1}
                         />
                         <label>Apartamento</label>
                         <input
+                            value={tipo}
                             type="radio"
                             name="tipo"
-                            value="apartament"
                             onChange={passandoFuncao1}
                         />
                     </label>
