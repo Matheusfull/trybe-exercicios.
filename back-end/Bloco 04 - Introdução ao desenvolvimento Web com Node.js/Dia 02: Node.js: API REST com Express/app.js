@@ -96,10 +96,10 @@ module.exports = app;
 
 /*
 exercício 3
-Para criar um servidor Node.js que utilize o framework Express, precisamos no arquivo app.js:
- -  importar o exmpress, uma vez que ele ja foi instalado pelo npm i express@4.17 
- -  Executar esse módulo
- -  Exportar esse módulo em execução
+Para criar um servidor Node.js que utilizando o framework Express, precisamos no arquivo app.js:
+ -  importar o exmpress, uma vez que ele já foi instalado pelo npm i express@4.17 
+ -  crie uma variável para instanciar o express
+ -  Exportar essa variável em execução
  Continua a explicação no arquivo server.js
 */
 
