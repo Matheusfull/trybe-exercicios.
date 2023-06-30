@@ -1,0 +1,27 @@
+Exercício 1:
+O que são os ODMs?
+
+- É uma forma de usar o banco de dados, porém não é preciso escrever nada, basta usar funções já estabelecidas para fazer as consultas.
+Vai relacionar os dados do banco com os elementos na linguagem computacional.
+- é uma técnica para realizar o mapeamento de schemas em bases de dados orientados a Documentos, ou seja, vai relacionar um atributo do schema com um do documento do banco de dados. 
+
+Exercício 2:
+Qual a diferença entre ODM e ORM?
+
+O ODM é referente ao MongoDB, um banco de dados não relacional.
+
+Exercício 3:
+De acordo com a documentação do Mongoose, uma Interface, um Schema e uma Model servem para representar o quê? Dê exemplos
+
+Interface: é onde estará o contrato para os documentos do MongoDB, será um molde de como os dados devem ser trabalhados, ou seja, quais as chaves e tipo de valor que ela devem ter.
+
+Schema: É tipo uma validação, para saber se os campos respeitam as regras impostas pela interface.
+
+Model: É a camada mais próxima do banco de dados que vai fazer as atividades nele, tais como um CRUD.
+
+Exercício 4:
+Quais são os 4 pilares da programação orientada a objetos? Discorra sobre a definição de cada um deles e dê exemplos
+
+Encapsulamento
+Abstração
+
